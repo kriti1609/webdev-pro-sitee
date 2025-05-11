@@ -1,0 +1,476 @@
+html{
+    font-size:62.5%
+}
+body{
+    font-family:"Manrope",sans-serif
+}
+*{
+    box-sizing:border-box;
+    padding:0px
+}
+.container{
+    margin:0;
+    width:100%;
+    max-width:1440px
+}
+.padding-y{
+    padding-top:1.6rem;
+    padding-bottom:1.6rem
+}
+.padding-x{
+    padding-left:1.6rem;
+    padding-right:1.6rem
+}
+@media screen and (min-width: 992px){
+    .padding-y{
+        padding-top:8rem;
+        padding-bottom:8rem
+    }
+    .padding-x{
+        padding-left:8rem;
+        padding-right:8rem
+    }
+}
+.primary-btn{
+    background:linear-gradient(116deg, #37a6c1 -6.46%, #36c097 116.94%);
+    padding:1.4rem 3.2rem
+}
+.button{
+    color:#fff;
+    text-align:center;
+    font-family:"Manrope",sans-serif;
+    font-size:1.6rem;
+    font-style:normal;
+    font-weight:600;
+    line-height:2.4rem;
+    border:none
+}
+li:active,li.active,li:hover,a:hover{
+    background-color:rgba(0,0,0,0) !important
+}
+nav{
+    background-color:#e0eef5 !important
+}
+nav .nav-wrapper{
+    display:flex;
+    align-items:center;
+    justify-content:space-between
+}
+nav .nav-wrapper .icon{
+    display:flex
+}
+nav .nav-wrapper .icon .logo{
+    width:100px;
+    height:60px
+}
+nav .nav-wrapper .sidenav-trigger{
+    float:right;
+    display:flex;
+    align-items:center;
+    justify-content:center
+}
+@media screen and (min-width: 992px){
+    nav{
+        height:8rem
+    }
+    nav .nav-wrapper{
+        height:8rem;
+        padding-top:1.6rem;
+        padding-bottom:1.6rem
+    }
+    nav .nav-wrapper .sidenav-trigger{
+        float:right;
+        display:none
+    }
+    nav .nav-wrapper .dt-menu-items{
+        display:flex;
+        gap:4.6rem
+    }
+    nav .nav-wrapper .dt-menu-items .dt-menu-item__link{
+        
+        font-family:"Manrope",sans-serif;
+        font-size:1.8rem;
+        font-style:normal;
+        font-weight:500;
+        line-height:2.8rem;
+        color:#000;
+        padding:1rem 0
+    }
+    nav .nav-wrapper .dt-menu-items .dt-menu-item.active,nav .nav-wrapper .dt-menu-items .dt-menu-item:hover{
+        border-bottom:2px solid #37a6c1
+    }
+    nav .nav-wrapper .dt-menu-items .dt-menu-item.active a,nav .nav-wrapper .dt-menu-items .dt-menu-item:hover a{
+        color:#37a6c1 !important
+    }
+}
+.page-footer{
+    background:#e9faff
+}
+.page-footer .footer-content{
+    padding:50px
+}
+.page-footer .row{
+    display:flex;
+    flex-direction:row;
+    margin:0
+}
+.page-footer .col{
+    display:inline-flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:27px;
+    color:#000
+}
+.page-footer .links .row{
+    color:#0c0520;
+    font-family:Manrope
+}
+.page-footer .links .col{
+    display:flex;
+    padding:0px 30px;
+    color:#0c0520;
+    font-family:Manrope;
+    font-size:16px;
+    font-style:normal;
+    font-weight:600;
+    line-height:24px;
+    letter-spacing:.32px;
+    width:100%;
+    flex-wrap:nowrap;
+    align-content:center;
+    justify-content:space-between;
+    align-items:flex-start
+}
+.page-footer .links .about-footer{
+    display:flex;
+    flex-direction:column;
+    padding:0px 30px;
+    font-family:Manrope;
+    font-size:16px
+}
+.page-footer .links .about-footer li{
+    color:rgba(0,0,0,.55);
+    font-size:16px;
+    font-style:normal;
+    font-weight:600;
+    line-height:24px;
+    letter-spacing:.42px
+}
+.page-footer .links .products-footer{
+    display:flex;
+    flex-direction:column;
+    padding:0px 30px;
+    font-family:Manrope;
+    font-size:16px
+}
+.page-footer .links .products-footer li{
+    color:rgba(0,0,0,.55);
+    font-family:Manrope;
+    font-size:16px;
+    font-style:normal;
+    font-weight:600;
+    line-height:24px;
+    letter-spacing:.42px
+}
+.page-footer .links .contact-footer{
+    display:flex;
+    flex-direction:column;
+    padding:0px 30px;
+    font-family:Manrope;
+    font-size:16px
+}
+.page-footer .links .contact-footer .li{
+    color:rgba(0,0,0,.55);
+    font-family:Manrope;
+    font-size:16px;
+    font-style:normal;
+    font-weight:600;
+    line-height:24px;
+    letter-spacing:.42px
+}
+.page-footer .links .email-form{
+    display:flex;
+    color:#000;
+    padding:0px 30px
+}
+.page-footer .links .email-form h5{
+    color:#0c0520;
+    font-family:Manrope;
+    font-size:16px;
+    font-style:normal;
+    font-weight:600;
+    line-height:24px;
+    letter-spacing:.32px
+}
+.page-footer .links .email-form button{
+    width:154px;
+    height:48px;
+    border:none
+}
+.page-footer .footer-copyright{
+    background-color:var(--primary-blue, #37a6c1) !important;
+    color:#fff;
+    text-align:center;
+    font-family:Manrope;
+    font-size:12px;
+    font-style:normal;
+    font-weight:400;
+    line-height:20px;
+    letter-spacing:.24px;
+    display:flex;
+    justify-content:center
+}
+@media screen and (min-width: 992px){
+    .page-footer h6{
+        font-family:IBM Plex Sans;
+        font-size:14px;
+        font-style:normal;
+        font-weight:500;
+        letter-spacing:.42px;
+        line-height:20px
+    }
+}
+@media screen and (max-width: 991px){
+    .page-footer .row{
+        flex-direction:column
+    }
+}
+.dt-menu-item{
+    font-family:Manrope;
+    font-size:18px;
+    font-style:normal;
+    font-weight:600;
+    line-height:28px;
+    letter-spacing:.36px
+}
+.dt-menu-item .active{
+    color:var(--primary-green, #37a6c1)
+}
+.hero{
+    background:linear-gradient(136deg, rgba(55, 166, 193, 0.6) 14.97%, rgba(55, 193, 143, 0.6) 90.13%);
+    border-radius:0% 0% 50% 50%/0% 0% 15% 15%;
+    padding-bottom:.5rem
+}
+.hero--content{
+    margin-bottom:8rem
+}
+.hero--heading{
+    color:#000;
+    font-family:"Lexend",sans-serif;
+    font-size:3.8rem;
+    font-style:normal;
+    font-weight:700;
+    line-height:normal;
+    letter-spacing:-0.3px;
+    margin:6rem 0 2.4rem
+}
+.hero--heading .brand{
+    background-image:url(../../assets/image/brand_underline.svg);
+    background-repeat:no-repeat;
+    background-position-y:bottom
+}
+.hero--text{
+    color:#0c0520;
+    font-family:"Manrope",sans-serif;
+    font-size:1.4rem;
+    font-style:normal;
+    font-weight:300;
+    line-height:2.6rem;
+    margin-bottom:2.4rem
+}
+.hero--btn{
+    display:inline-block;
+    margin-bottom:6rem
+}
+.hero--video{
+    width:100%;
+    border-radius:10.803px;
+    border:14px solid #37a6c1;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.33) 0%, rgba(0, 0, 0, 0.33) 100%),url(<path-to-image>),#d3d3d3 50%/cover no-repeat
+}
+.hero--scroll-down{
+    cursor:pointer
+}
+.hero--scroll-down a{
+    color:#000;
+    text-decoration:none;
+    text-align:center;
+    font-family:Manrope;
+    font-size:1.4rem;
+    font-style:normal;
+    font-weight:600;
+    line-height:2.2rem
+}
+.hero--scroll-down img{
+    height:2.4rem;
+    width:2.4rem
+}
+.section-headings{
+    color:var(--dark-000000, #000);
+    text-align:center;
+    font-family:Lexend;
+    font-size:40px;
+    font-style:normal;
+    font-weight:500;
+    line-height:56px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    align-content:center;
+}
+.products{
+    padding:70px;
+    margin:0px 80px 0px 80px
+}
+.products .prevbutton{
+    margin-top:25px
+}
+.products .nextbutton{
+    margin-top:25px
+}
+.carousel .carousel-item{
+    width:250px;
+    height:300px
+}
+.card-benifit{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    border-radius:12px;
+    border:.736px solid rgba(0,0,0,.05);
+    box-shadow:0px 2.94468px 16.93192px 0px rgba(0,0,0,.02);
+    padding:40px
+}
+.card-image-benifit{
+    height:71px;
+    width:74px
+}
+.cardheading{
+    color:var(--dark-000000, #000);
+    text-align:center;
+    font-family:Lexend;
+    font-size:20px;
+    font-style:normal;
+    font-weight:500;
+    line-height:28px;
+    letter-spacing:.4px
+}
+.cardText{
+    color:var(--dark-000000, #000);
+    text-align:center;
+    font-family:Manrope;
+    font-size:16px;
+    font-style:normal;
+    font-weight:300;
+    line-height:24px
+}
+.location{
+    margin:90px
+}
+.location .row li{
+    display:flex;
+    align-items:center;
+    justify-content:start;
+    gap:2rem;
+    padding:1rem .75rem
+}
+.statistics{
+    margin:80px
+}
+.box{
+    background-image:url(../../assets/image/statsBG.svg);
+    background-size:cover;
+    border-radius:1.6rem
+}
+.box ul{
+    display:flex;
+    justify-content:space-around;
+    padding:40px
+}
+.box li{
+    color:#fff
+}
+.card{
+    display:flex;
+    padding:30.07px;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:9.397px;
+    border-radius:5.638px;
+    border:.94px solid rgba(143,129,129,.15);
+    background:#fff;
+    box-shadow:0px -0.93967px 19.73316px 0px rgba(0,0,0,.07)
+}
+.testimonial{
+    margin:40px
+}
+.testimonial .card-content{
+    color:rgba(0,0,0,.63);
+    font-family:Manrope;
+    font-size:16px;
+    font-style:normal;
+    font-weight:300;
+    line-height:24px
+}
+.card-action{
+    display:flex;
+    align-items:center;
+    gap:10px
+}
+@media screen and (min-width: 601px){
+    .hero--content{
+        display:flex;
+        align-items:center;
+        justify-content:space-between
+    }
+    .hero--content--div{
+        margin-left:50px
+    }
+}
+@media screen and (min-width: 993px){
+    .hero--content{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        flex-direction:row-reverse;
+        gap:20px
+    }
+    .hero--heading{
+        font-size:6rem;
+        line-height:7.2rem;
+        letter-spacing:-0.3px
+    }
+    .hero--text{
+        font-size:2rem;
+        line-height:3.2rem;
+        margin-bottom:3.4rem
+    }
+    .hero--video{
+        width:100%;
+        height:32rem;
+        border-radius:10.803px
+    }
+    .hero--scroll-down{
+        cursor:pointer
+    }
+    .hero--scroll-down a{
+        font-size:1.4rem;
+        font-style:normal;
+        font-weight:600;
+        line-height:2.2rem
+    }
+    .hero--scroll-down img{
+        height:2.4rem;
+        width:2.4rem
+    }
+}
+.collapsible{
+    box-shadow:none;
+    border:none
+}
+.pic{
+    width: 20%;
+     margin: 3px;
+}

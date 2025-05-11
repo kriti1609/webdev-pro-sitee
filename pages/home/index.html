@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iRefill</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="../../styles/materialize.min.css" />
+    <link href="../../styles/fonts.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./index.min.css" />
+    <style>
+        html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .pic-ctn {
+    width: 100vw;
+    height: 200px;
+  }
+
+  @keyframes display {
+    0% {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+    10% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    20% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    30% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+  }
+
+  .pic-ctn {
+    position: relative;
+    width: 100vw;
+    height: 300px;
+    margin-top: 15vh;
+  }
+
+  .pic-ctn > img {
+    position: absolute;
+    top: 0;
+    left: calc(30%);
+    opacity: 0;
+    animation: display 10s infinite;
+  }
+
+  img:nth-child(2) {
+    animation-delay: 2s;
+  }
+  img:nth-child(3) {
+    animation-delay: 4s;
+  }
+  img:nth-child(4) {
+    animation-delay: 6s;
+  }
+  img:nth-child(5) {
+    animation-delay: 8s;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .pic-ctn {
+      height: 200px;
+    }
+
+    .pic-ctn > img {
+      left: calc(50% - 75px);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .pic-ctn {
+      height: 150px;
+    }
+
+    .pic-ctn > img {
+      left: calc(50% - 50px);
+    }
+  }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="padding-x">
+        <div class="nav-wrapper">
+          <a class="icon" href="#"
+            ><img class="logo" src="../../assets/image/logo.svg"
+          /></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down dt-menu-items">
+            <li class="active dt-menu-item">
+              <a class="dt-menu-item__link" href="../home">Home</a>
+            </li>
+            <li class="dt-menu-item">
+              <a class="dt-menu-item__link" href="../about">About Us</a>
+            </li>
+            <li class="dt-menu-item">
+              <a class="dt-menu-item__link" href="../products/products.html">Products</a>
+            </li>
+            <li class="dt-menu-item">
+              <a class="dt-menu-item__link" href="../gallery">Gallery</a>
+            </li>
+            <li class="dt-menu-item">
+              <a class="dt-menu-item__link" href="../blog">Blog</a>
+            </li>
+            <li class="dt-menu-item">
+              <a class="dt-menu-item__link" href="../contact">Contact</a>
+            </li>
+          </ul>
+          <a href="#" data-target="mobile-view" class="sidenav-trigger"
+            ><img src="../../assets/image/Hamburger.svg" />
+          </a>
+        </div>
+      </nav>
+      <ul class="sidenav" id="mobile-view">
+        <li><a href="../about">About Us</a></li>
+        <li><a href="../products">Products</a></li>
+        <li><a href="../gallery">Gallery</a></li>
+        <li><a href="../blog">Blog</a></li>
+        <li><a class="primary-btn" href="../contact">Contact</a></li>
+      </ul>
+    </header>
+    
+    <main>
+      <section class="hero padding-x padding-y">
+        <div class="container">
+          <div class="row hero--content">
+            <div class="col s12 m6">
+              <h1 class="hero--heading">
+                Making Reuse and Refill Accessible for All
+              </h1>
+              <p class="hero--text">
+                We develop refill dispensers (vending machines) that can
+                dispense FMCG products such as edible oil, milk, grains and
+                pulses, shampoo, liquid detergents and many more.
+              </p>
+              <a class="button primary-btn hero--btn" href="../partnership"
+                >Connect With Us</a
+              >
+            </div>
+            <div class="col s12 m6 offset-m1">
+              <iframe
+                class="hero--video"
+                height="320"
+                src="https://www.youtube.com/embed/NINtsZKgI5M?si=iTDjZYRc84wf75rp"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="products">
+        <h2 class="center-align section-headings">Our Products</h2>
+        <div class="pic-ctn">
+          <img src="../../assets/image/Offline 1.png" alt="" class="pic">
+          <img src="../../assets/image/Offline 2.png" alt="" class="pic">
+          <img src="../../assets/image/Offline 3.png" alt="" class="pic">
+          <img src="../../assets/image/Online Screen 1.png" alt="" class="pic">
+          <img src="../../assets/image/Online Screen 2.png" alt="" class="pic">
+          <img src="../../assets/image/Online Screen 3.png" alt="" class="pic">
+        </div>
+        <div class="slider-controls center-align">
+          <button
+            id="prevButton"
+            class="btn waves-effect waves-light prevbutton"
+          >
+            Previous
+          </button>
+          <button
+            id="nextButton"
+            class="btn waves-effect waves-light nextbutton"
+          >
+            Next
+          </button>
+        </div>
+      </section>
+
+      <section id="beniits" class="benifits-irefill">
+        <span class="section-headings center-align">Benefits</span>
+
+        <div class="carousel">
+          <a class="carousel-item" href="#one!">
+            <div class="card-benifit blue lighten-5">
+              <img
+                class="card-image-benifit center-align"
+                src="../../assets/image/doodle-1.svg"
+              />
+              <div class="card-content-benifit">
+                <h6 class="cardheading">Save packaging cost</h6>
+                <p class="cardText">
+                  By reducing cost of packaging and operations.
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <a class="carousel-item" href="#two!"
+            ><div class="card-benifit deep-purple lighten-5">
+              <img
+                class="card-image-benifit center-align"
+                src="../../assets/image/doodle-2.svg"
+              />
+              <div class="card-content-benifit">
+                <h6 class="cardheading">
+                  Reduce plastic waste and carbon Emission
+                </h6>
+                <p class="cardText">
+                  By eliminating the need to recycle or send to landfills.
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <a class="carousel-item" href="#three!">
+            <div class="card-benifit green lighten-5">
+              <img
+                class="card-image-benifit center-align"
+                src="../../assets/image/doodle-3.svg"
+              />
+              <div class="card-content-benifit">
+                <h6 class="cardheading">
+                  Enhance store aesthetics and brand image
+                </h6>
+                <p class="cardText">
+                  By installing refill dispensers and providing a unique retail
+                  experience for end users.
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <a class="carousel-item" href="#four!"
+            ><div class="card-benifit blue lighten-5">
+              <img
+                class="card-image-benifit center-align"
+                src="../../assets/image/doodle-1.svg"
+              />
+              <div class="card-content-benifit">
+                <h6 class="cardheading">
+                  Boost brand value and customer loyalty
+                </h6>
+                <p class="cardText">
+                  by offering products in a sustainable way.
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <a class="carousel-item" href="#five!"
+            ><div class="card-benifit purple lighten-5">
+              <img
+                class="card-image-benifit"
+                src="../../assets/image/doodle-2.svg"
+              />
+              <div class="card-content-benifit">
+                <h6 class="cardheading">Save penalties and EPR cost</h6>
+                <p class="cardText">by complying with regulations.</p>
+              </div>
+            </div></a
+          >
+          <a class="carousel-item" href="#six!"
+            ><div class="card-benifit purple lighten-5">
+              <img
+                class="card-image-benifit"
+                src="../../assets/image/doodle-2.svg"
+              />
+              <div class="card-content-benifit">
+                <h6 class="cardheading">
+                  Real-time visibility on stock levels and sales
+                </h6>
+                <p class="cardText">Live tracking of product sold.</p>
+              </div>
+            </div></a
+          >
+        </div>
+      </section>
+      <!--
+              <div class="row">
+        <div class="col s12 m6">
+          <div class="flip-container">
+            <div class="flipper">
+              Front of the card 
+              <div class="front">
+                <div class="card-content">
+                  <span class="card-title">Front Content</span>
+                  <p>This is the front side of the card.</p>
+                </div>
+              </div>
+              <div class="back">
+                <div class="card-content">
+                  <span class="card-title">Back Content</span>
+                  <p>This is the back side of the card.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>   
+  -->
+
+      <section id="location " class="location">
+        <h2 class="center-align section-headings">
+          Where the Refill Dispensers Can be Installed ?
+        </h2>
+        <ul class="row">
+          <li class="col s6 m4">
+            <img
+              class="icon-location"
+              src="../../assets/image/super markets.svg"
+            />
+            <h5>Super Markets</h5>
+          </li>
+          <li class="col s6 m4">
+            <img
+              class="icon-location"
+              src="../../assets/image/retail shop.svg"
+            />
+            <h5>Retail shop</h5>
+          </li>
+          <li class="col s6 m4">
+            <img
+              class="icon-location"
+              src="../../assets/image/society complexes.svg"
+            />
+            <h5>Society Complexes</h5>
+          </li>
+          <li class="col s6 m4">
+            <img
+              class="icon-location"
+              src="../../assets/image/hostel-campuses.svg"
+            />
+            <h5>College Campuses</h5>
+          </li>
+          <li class="col s6 m4">
+            <img
+              class="icon-location"
+              src="../../assets/image/brand stores.svg"
+            />
+            <h5>Brands stores</h5>
+          </li>
+          <li class="col s6 m4">
+            <img
+              class="icon-location"
+              src="../../assets/image/organic stores.svg"
+            />
+            <h5>Organic Stores</h5>
+          </li>
+        </ul>
+      </section>
+
+      <section class="statistics">
+        <div class="box">
+          <div class="col s6 m4">
+            <ul>
+              <li>
+                <h2>3k+</h2>
+                <p>Analyzed Scripts</p>
+              </li>
+              <li>
+                <h2>280</h2>
+                <p>Realized Projects</p>
+              </li>
+              <li>
+                <h2>120</h2>
+                <p>Loyal Customers</p>
+              </li>
+              <li>
+                <h2>160</h2>
+                <p>Loyal Customers</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+        <h2 class="center-align section-headings"><b>Testimonials</b></h2>
+        <div>
+        <link rel="stylesheet" href="testimonial.css">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+        <div class="container">
+          <div class="row">
+              <div class="col-md-offset-2 col-md-8">
+                  <div id="testimonial-slider" class="owl-carousel">
+                      <div class="testimonial">
+                          <div class="pic">
+                              <img src="../../assets/image/priya.svg" alt="customer 1" class="img-responsive">
+                          </div>
+                          <h3 class="testimonial-info">
+                              Priya Solanki
+                          </h3>
+                          <p class="description">Refill has become a game-changer for our household. We've
+                              switched to their refillable cleaning supplies and
+                              toiletries, and it's made our daily routines much more
+                              sustainable. Thank you, Refill!".</p>
+                      </div>
+                      <div class="testimonial">
+                          <div class="pic">
+                              <img src="../../assets/image/pankaj.svg" alt="" class="img-responsive">
+                          </div>
+                          <h3 class="testimonial-info">
+                              Pankaj Sharma
+                          </h3>
+                          <p class="description">I can't express how much I appreciate Refill's refillable
+                              options. It's refreshing to see a brand in India actively
+                              working towards reducing plastic waste. Their products are of
+                              excellent quality and fit perfectly into my sustainable
+                              lifestyle.."</p>
+                      </div>
+                      <div class="testimonial">
+                          <div class="pic">
+                              <img src="../../assets/image/rohit.svg" alt="customer 1" class="img-responsive">
+                          </div>
+                          <h3 class="testimonial-info">
+                              Rohit Kumar
+                          </h3>
+                          <p class="description">We've
+                              switched to their refillable cleaning supplies and
+                              toiletries, and it's made our daily routines much more
+                              sustainable. It feels great to know we're actively reducing
+                              plastic waste. Thank you, Refill!"</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#testimonial-slider").owlCarousel({
+            items:1,
+            itemsDesktop:[1000,1],
+            itemsDesktopSmall:[979,1],
+            itemsTablet:[768,1],
+            pagination:true,
+            navigation:false,
+            navigationText:["",""],
+            slideSpeed:1000,
+            singleItem:true,
+            autoPlay:true
+        });
+    });
+</script>
+
+      </div>
+      
+        
+        </div>
+        <!--<div class="row">
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-content">
+                <p>
+                  <img src="../../assets/image/inverted-commas.svg" />Irefill
+                  has made a positive impact on my daily routine. Their
+                  refillable options for household items like cleaning supplies
+                  and toiletries are not only eco-friendly but also
+                  pocket-friendly. I'm proud to support a brand that helps
+                  reduce plastic waste. Highly recommended!"
+                </p>
+              </div>
+              <div class="card-action">
+                <img src="../../assets/image/priya.svg" alt="Customer 1" />
+                <h6>Priya Solanki</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="card medium">
+              <div class="card-content">
+                <p class="center-align">
+                  <img src="../../assets/image/inverted-commas.svg" /><b
+                    >Refill has become a game-changer for our household. We've
+                    switched to their refillable cleaning supplies and
+                    toiletries, and it's made our daily routines much more
+                    sustainable. It feels great to know we're actively reducing
+                    plastic waste. Thank you, Refill!"</b
+                  >
+                </p>
+              </div>
+              <div class="card-action">
+                <img src="../../assets/image/pankaj.svg" alt="Customer 2" />
+                <h6>Pankaj Sharma</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-content">
+                <p>
+                  <img src="../../assets/image/inverted-commas.svg" />
+                  I can't express how much I appreciate Refill's refillable
+                  options. It's refreshing to see a brand in India actively
+                  working towards reducing plastic waste. Their products are of
+                  excellent quality and fit perfectly into my sustainable
+                  lifestyle.."
+                </p>
+              </div>
+              <div class="card-action">
+                <img src="../../assets/image/rohit.svg" alt="Customer 3" />
+                <h6>Rohit Kumar</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      -->
+      </section>
+      <section class="awards">
+        <div class="row">
+          <div class="col s12">
+            <h2 class="center-align section-headings">
+              <b>Awards and Recognition</b>
+            </h2>
+            <marquee behavior="slide" direction="left">
+              <div class="logos center-align">
+                <img
+                  src="../../assets/image/recognition 1.svg"
+                  alt="recognition"
+                />
+                <img
+                  src="../../assets/image/recognition 2.svg"
+                  alt="recognition"
+                />
+                <img
+                  src="../../assets/image/recognition 3.svg"
+                  alt="recognition"
+                />
+                <img
+                  src="../../assets/image/recognition 4.svg"
+                  alt="recognition"
+                />
+              </div>
+            </marquee>
+            
+          </div>
+        </div>
+      </section>
+      <!-- cards
+      <section class="carousal-products">
+        <div class="card">
+          <h3 class="title">Card 1</h3>
+          <div class="bar">
+            <div class="emptybar"></div>
+            <div class="filledbar"></div>
+          </div>
+          <div class="circle">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+              <circle class="stroke" cx="60" cy="60" r="50" />
+            </svg>
+          </div>
+        </div>
+        <div class="card">
+          <h3 class="title">Card 2</h3>
+          <div class="bar">
+            <div class="emptybar"></div>
+            <div class="filledbar"></div>
+          </div>
+          <div class="circle">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+              <circle class="stroke" cx="60" cy="60" r="50" />
+            </svg>
+          </div>
+        </div>
+        <div class="card">
+          <h3 class="title">Card 3</h3>
+          <div class="bar">
+            <div class="emptybar"></div>
+            <div class="filledbar"></div>
+          </div>
+          <div class="circle">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+              <circle class="stroke" cx="60" cy="60" r="50" />
+            </svg>
+          </div>
+        </div>
+        <div class="card">
+          <h3 class="title">Card 4</h3>
+          <div class="bar">
+            <div class="emptybar"></div>
+            <div class="filledbar"></div>
+          </div>
+          <div class="circle">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+              <circle class="stroke" cx="60" cy="60" r="50" />
+            </svg>
+          </div>
+        </div>
+      </section>
+      -->
+    </main>
+    <footer class="page-footer">
+      <div class="row footer-content">
+        <div class="col s12">
+          <div>
+            <img src="../../assets/image/logo.svg" />
+            <h6><b>Address:</b>Indore, India.</h6>
+            <h6><b>Telephone:</b> +91 9111177783</h6>
+            <h6><b> Email:</b> info@irefill.in.</h6>
+          </div>
+          <div>
+            <img src="../../assets/image/instagram.svg" alt="instagram" />
+            <img src="../../assets/image/facebook.svg" alt="facebook" />
+            <img src="../../assets/image/twitter.svg" alt="twitter" />
+            <img src="../../assets/image/linkedin.svg" alt="linkedin" />
+          </div>
+        </div>
+        <div class="links col s12 footer-links hide-on-small-only">
+          <div class="row">
+            <div class="col s12">
+              <div class="about-footer footer-links hide-on-small-only">
+                <h5>About</h5>
+                <ul>
+                  <li>
+                    <a href="#!">About Us</a>
+                  </li>
+                  <li>
+                    <a href="#!">Partnership</a>
+                  </li>
+                  <li>
+                    <a href="#!">Blog</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col s12">
+              <div class="products-footer footer-links hide-on-small-only">
+                <h5>PRODUCTS</h5>
+                <ul>
+                  <li>
+                    <a href="#!">Products</a>
+                  </li>
+                  <li>
+                    <a href="#!">Contact</a>
+                  </li>
+                  <li>
+                    <a href="#!">Privacy Policy</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- <div class="col s12">
+              <div class="contact-footer footer-links hide-on-small-only">
+                <h5>Contact</h5>
+                <ul>
+                  <li>
+                    <a href="#!">Return & Refund</a>
+                  </li>
+                  <li>
+                    <a href="#!">Terms & Condition</a>
+                  </li>
+                  <li>
+                    <a href="#!">Privacy Policy</a>
+                  </li>
+                </ul>
+              </div>
+            </div>-->
+          </div>
+        </div>
+
+        <div class="hide-on-med-and-up">
+          <ul class="collapsible">
+            <li>
+              <div class="collapsible-header">
+                <label>About</label>
+              </div>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="../about/">About Us</a></li>
+                  <li><a href="../partnership/">Partnership</a></li>
+                  <li><a href="../blog/">Blog</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <label>Products</label>
+              </div>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="../products/">Products</a></li>
+                  <li><a href="../">Privacy</a></li>
+                </ul>
+              </div>
+            </li>
+            <!--<li>
+              <div class="collapsible-header">
+                <label>Contact</label>
+              </div>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="../">Return & Refund</a></li>
+                  <li><a href="../">Terms and Condition</a></li>
+                  <li><a href="../">Privacy Policy</a></li>
+                </ul>
+              </div>
+            </li>-->
+          </ul>
+        </div>
+
+        <div>
+          <!-- <div class="email-form col s12">
+            <form>
+              <span>
+                <h5>
+                  <img src="../../assets/image/email-icon.svg" /> Signup for
+                  update and newsletter
+                </h5>
+              </span>
+              <div class="input-field">
+                <input id="email" type="email" class="validate" />
+                <label for="email">Enter your e-mail address</label>
+              </div>
+              <button type="submit" class="button primary-btn">Submit</button>
+            </form>
+          </div>-->
+        </div>
+      </div>
+      <div class="footer-copyright center-align">
+        © 2021 Copyrights by Irefill Pvt Ltd All Rights Reserved. Designed by
+        Irefill Pvt Ltd
+      </div>
+    </footer>
+    <script src="../../scripts/jquery-3.6.0.min.js"></script>
+    <script src="../../scripts/materialize.min.js"></script>
+    <script src="./index.js"></script>
+    <script src="../../styles/footer.js"></script>
+  </body>
+</html>

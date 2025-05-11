@@ -1,0 +1,9 @@
+.btn {
+  color: #fff;
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  background: linear-gradient(116deg, #37a6c1 -6.46%, #36c097 116.94%);
+  padding-top: 3 rem;
+}

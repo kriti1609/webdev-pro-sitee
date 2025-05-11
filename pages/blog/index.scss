@@ -1,0 +1,39 @@
+@use "../../styles/base.scss";
+@use "../../styles/nav.scss";
+@use "../../styles/footer.scss";
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.row {
+    padding: 30px;
+    .blog-card {
+        height: 485px;
+        border-radius: 10px;
+        .card {
+        }
+        .card-image {
+        }
+        .blog-img {
+        }
+        .card-content {
+            padding: 17px;
+            .card-title {
+                font-family: lexend;
+                font-size: medium;
+                font-size: 20px;
+                line-height: 28px;
+                color: #151614;
+                font-weight: bold;
+            }
+            .about-blog {
+                font-family: manrope;
+                font-size: 16px;
+                line-height: 24px;
+                color: #474b44;
+                font-weight: lighter;
+            }
+        }
+    }
+}

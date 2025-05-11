@@ -1,0 +1,81 @@
+@use "../../styles/base.scss";
+@use "../../styles/nav.scss";
+@use "../../styles/footer.scss";
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+.container {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  .bg-gradient {
+    display: block;
+    width: 100%;
+    position: relative;
+    .heading {
+      font-family: Lexend;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 72px;
+      letter-spacing: -0.3px;
+      position: absolute;
+      top: 8%;
+      left: 40%;
+      color: white;
+    }
+    img {
+      width: 100vw;
+    }
+  }
+  .heroimg {
+    position: absolute;
+    top: 21%;
+    left: 22%;
+    width: 700px;
+    height: 350px;
+  }
+  .aboutUsText {
+    margin-top: 25rem;
+    .bodyText {
+      color: rgba(0, 0, 0, 0.86);
+      font-family: Manrope;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 32px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .bg-gradient {
+    .heading {
+      color: #fff;
+      font-family: Lexend;
+      font-size: 38px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+    .heroimg {
+      position: absolute;
+      top: 12%;
+      left: 29%;
+      width: 340px;
+      height: 200px;
+    }
+  }
+  .aboutUsText {
+    .bodyText {
+      color: rgba(0, 0, 0, 0.6);
+      font-family: Manrope;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26px;
+      margin: 40px;
+    }
+  }
+}

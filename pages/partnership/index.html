@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iRefill</title>
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="./style.min.css" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="javascript" href="./contact.js" />
+    <link href="style.min.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="padding-x">
+        <div class="nav-wrapper">
+          <a class="icon" href="#"
+            ><img class="logo" src="../../assets/image/logo.svg"
+          /></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down dt-menu-items">
+            <li class="active dt-menu-item">
+              <a class="dt-menu-item__link" href="../home">Home</a>
+            </li>
+            <li class="dt-menu-item">
+              <a class="dt-menu-item__link" href="../about">About Us</a>
+            </li>
+            <li class="dt-menu-item">
+              <a class="dt-menu-item__link" href="../products">Products</a>
+            </li>
+            <li class="dt-menu-item">
+              <a class="dt-menu-item__link" href="../gallery">Gallery</a>
+            </li>
+            <li class="dt-menu-item">
+              <a class="dt-menu-item__link" href="../blog">Blog</a>
+            </li>
+            <li><a class="button primary-btn" href="../contact">Contact</a></li>
+          </ul>
+          <a href="#" data-target="mobile-view" class="sidenav-trigger"
+            ><img src="../../assets/image/Hamburger.svg" />
+          </a>
+        </div>
+      </nav>
+      <ul class="sidenav" id="mobile-view">
+        <li><a href="../about">About Us</a></li>
+        <li><a href="../products">Products</a></li>
+        <li><a href="../gallery">Gallery</a></li>
+        <li><a href="../blog">Blog</a></li>
+        <li><a class="primary-btn" href="../contact">Contact</a></li>
+      </ul>
+    </header>
+
+    <section class="hero">
+      <div>
+        <img
+          src="../../assets/image/Contact form1.svg"
+          style="width: 100vw; height: auto"
+          class="hide-on-small-only"
+        />
+        <img
+          src="../../assets/image/Contact form small1.jpg"
+          style="width: 100vw; height: auto"
+          class="hide-on-med-and-up"
+        />
+      </div>
+      <div class="text-overlay">
+        <form class="col s12">
+          <div class="row">
+            <div class="elements">
+              <input placeholder="Name *" type="text" class="validate" />
+            </div>
+            <div class="elements">
+              <input placeholder="Company Name*" type="text" class="validate" />
+            </div>
+            <div class="elements">
+              <input placeholder="Position *" type="text" class="validate" />
+            </div>
+            <div class="elements">
+              <input placeholder="Email*" type="email" class="validate" />
+            </div>
+            <div class="elements">
+              <input placeholder="Phone *" type="text" class="validate" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer></footer>
+  </body>
+</html>

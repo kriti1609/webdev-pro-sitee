@@ -1,0 +1,44 @@
+.nav-wrapper {
+    .dt-menu-item {
+        font-family: Manrope;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px;
+        letter-spacing: 0.36px;
+        .active {
+            color: var(--primary-green, #37a6c1);
+        }
+    }
+}
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    img {
+        width: 100%;
+        height: auto;
+    }
+    .text-overlay {
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        font-size: 24px;
+        font-weight: bold;
+
+        .elements {
+            padding-bottom: 20px;
+            margin-bottom: 50px;
+        }
+    }
+}
+@media screen and (min-width: 993px) {
+    .header {
+        .text-overlay {
+            left: 45%;
+        }
+    }
+}
+@media screen and (min-width: 576px) {
+}

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iRefill</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Work+Sans:ital,wght@0,400;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./products.min.css"></link> 
+  </head>
+  <body>
+    <header>
+      <nav class="padding-x">
+        <div class="nav-wrapper">
+          <a class="icon" href="#"
+            ><img
+              class="logo"
+              src="../../assets/image/logo.svg"
+          /></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down dt-menu-items">
+            <li class="dt-menu-item">
+              <a class="dt-menu-item__link" href="../home">Home</a>
+            </li>
+            <li class="dt-menu-item">
+              <a class="dt-menu-item__link" href="../about">About Us</a>
+            </li>
+            <li class="active dt-menu-item">
+              <a class="dt-menu-item__link" href="../products">Products</a>
+            </li>
+            <li class="dt-menu-item">
+              <a class="dt-menu-item__link" href="../gallery">Gallery</a>
+            </li>
+            <li class="dt-menu-item">
+              <a class="dt-menu-item__link" href="../blog">Blog</a>
+            </li>
+            <li><a class="button primary-btn" href="../contact">Contact</a></li>
+          </ul>
+          <a href="#" data-target="mobile-view" class="sidenav-trigger"
+            ><img src="../../assets/image/Hamburger.svg" />
+          </a>
+        </div>
+      </nav>
+      <ul class="sidenav" id="mobile-view">
+        <li><a href="../about">About Us</a></li>
+        <li><a href="../products">Products</a></li>
+        <li><a href="../gallery">Gallery</a></li>
+        <li><a href="../blog">Blog</a></li>
+        <li><a class="primary-btn" href="../contact">Contact</a></li>
+      </ul>
+    </header>
+    <main>
+      <section class="section-ar">
+        <h2 class="heading bold-text">Available Machines</h2>
+        <div class="row">
+          <div class="col s12 m4 product">
+            <img class="product-image" src="../../assets/image/1-unit-dispenser.svg" />
+            <h4>Single unit refilling dispenser</h4>
+            <a href="#modal1" data-target="modal1" class="modal-trigger">View More<img src="../../assets/image/arrow.svg "/></a>
+          </div>
+          <div class="col s12 m4 product">
+            <img class="product-image" src="../../assets/image/1-unit-dispenser.svg" />
+            <h4>Double unit refilling dispenser</h4>
+            <a href="#modal1" data-target="modal1" class="modal-trigger">View More<img src="../../assets/image/arrow.svg "/></a>
+          </div>
+          <div class="col s12 m4 product">
+            <img class="product-image" src="../../assets/image/1-unit-dispenser.svg" />
+            <h4>4-unit refilling dispenser without screen</h4>
+            <a href="#modal1" data-target="modal1" class="modal-trigger">View More<img src="../../assets/image/arrow.svg "/></a>
+          </div>
+          <div id="modal1" class="modal">
+            <div class="modal-content">
+              <div class="row">
+                <div class="col s12 m6">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col s12">
+                        <img
+                          src="../../assets/image/main-image.svg"
+                          alt="Main Product Image"
+                          class="product-image"
+                          id="main-product-image"
+                        />
+                      </div>
+                      <div class="col s12">
+                        <div class="row">
+                          <img
+                            class="col thumb"
+                            src="../../assets/image/thumbnail1.svg"
+                            alt="Thumbnail 1"
+                            onclick="changeImage('../../assets/image/thumbnail1.svg')"
+                          />
+                          <img
+                            class="col thumb"
+                            src="../../assets/image/thumbnail2.svg"
+                            alt="Thumbnail 2"
+                            onclick="changeImage('../../assets/image/thumbnail2.svg')"
+                          />
+                          <img
+                            class="col thumb"
+                            src="../../assets/image/thumbnail3.svg"
+                            alt="Thumbnail 3"
+                            onclick="changeImage('../../assets/image/thumbnail3.svg')"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col s12 m6">
+                  <h3>Single unit refilling dispenser</h3>
+                  <p>
+                    It has single nozzle to dispense the product. Its
+                    available with and without screen
+                  </p>
+                  <div class="row">
+                    <div class="col s12">
+                      <ul class="tabs">
+                        <li class="tab">
+                          <a href="#s1-spec"
+                            ><img
+                              src="../../assets/image/specificationIcon.svg"
+                            />Specifications</a
+                          >
+                        </li>
+                        <li class="tab">
+                          <a class="active" href="#s1-apps"
+                            ><img
+                              src="../../assets/image/appIcon.svg"
+                            />Applications</a
+                          >
+                        </li>
+                        <li class="tab">
+                          <a href="#s1-adv"
+                            ><img src="../../assets/image/advIcon.svg" />
+                            Advantages</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div id="s1-spec" class="col s12 tab-content">
+                      <ul>
+                        <li>It can dispense only 1 product at a time.</li>
+                        <li>
+                          Fully contactless refilling process by phone.
+                        </li>
+                        <li>
+                          There is an emergency stop for added safety.
+                        </li>
+                        <li>It occupies minimum space to install.</li>
+                        <li>Low electricity consumption.</li>
+                        <li>Filling speed – 3LMP*</li>
+                      </ul>
+                    </div>
+                    <div id="s1-apps" class="col s12 tab-content">Test 2</div>
+                    <div id="s1-adv" class="col s12 tab-content">Test 3</div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a
+                  href="#!"
+                  class="modal-close waves-effect waves-green btn-flat"
+                  >Close</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="row footer-content">
+        <div class="col s12">
+          <div>
+            <img src="../../assets/image/logo.svg" />
+            <h6><b>Address:</b>Indore, India.</h6>
+            <h6><b>Telephone:</b> +91 9111177783</h6>
+            <h6><b> Email:</b> info@irefill.in.</h6>
+          </div>
+          <div>
+            <img src="../../assets/image/instagram.svg" alt="instagram" />
+            <img src="../../assets/image/facebook.svg" alt="facebook" />
+            <img src="../../assets/image/twitter.svg" alt="twitter" />
+            <img src="../../assets/image/linkedin.svg" alt="linkedin" />
+          </div>
+        </div>
+        <div class="links col s12">
+          <div class="row">
+            <div class="col s12">
+              <div class="about-footer">
+                <h5>About</h5>
+                <ul>
+                  <li>
+                    <a href="#!">About Us</a>
+                  </li>
+                  <li>
+                    <a href="#!">Partnership</a>
+                  </li>
+                  <li>
+                    <a href="#!">Blog</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col s12">
+              <div class="products-footer">
+                <h5>PRODUCTS</h5>
+                <ul>
+                  <li>
+                    <a href="#!">Products</a>
+                  </li>
+                  <li>
+                    <a href="#!">Contact</a>
+                  </li>
+                  <li>
+                    <a href="#!">Privacy Policy</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col s12">
+              <div class="contact-footer">
+                <h5>Contact</h5>
+                <ul>
+                  <li>
+                    <a href="#!">Return & Refund</a>
+                  </li>
+                  <li>
+                    <a href="#!">Terms & Condition</a>
+                  </li>
+                  <li>
+                    <a href="#!">Privacy Policy</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col s12">
+              <div class="email-form col s12">
+                <form>
+                  <span>
+                    <h5>
+                      <img src="../../assets/image/email-icon.svg" /> Signup for
+                      update and newsletter
+                    </h5>
+                  </span>
+                  <div class="input-field">
+                    <input id="email" type="email" class="validate" />
+                    <label for="email">Enter your e-mail address</label>
+                  </div>
+                  <button type="submit" class="button primary-btn">
+                    Submit
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright center-align">
+        iRefill Private Ltd. Copyright @2023 iRefill. All rights reserved.
+        <span><a href="#!">More Links</a></span>
+      </div>
+    </footer>
+    <script src="products.js"></script>
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+ 
+</html>

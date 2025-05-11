@@ -1,0 +1,124 @@
+@use "../../styles/base.scss";
+@use "../../styles/nav.scss";
+@use "../../styles/footer.scss";
+
+.main {
+  padding: 60px .heading {
+    font-family: "lexend";
+    font: lexend;
+    font-size: 48px;
+    line-height: 64px;
+  }
+  .product {
+    .product-image {
+      width: 100%;
+    }
+    h4 {
+      font-family: lexend;
+      font: lexend;
+      font-size: 24px;
+      font-weight: medium;
+      line-height: 32px;
+    }
+    a {
+      font: be vietnam;
+      font-weight: medium;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 4%;
+    }
+  }
+  .modal {
+    width: 80%;
+    .thumb {
+      &.active {
+        border: 1px solid blue;
+      }
+    }
+    h3 {
+      font-family: "lexend";
+      font-weight: medium;
+      font-size: 32px;
+      line-height: 42px;
+      color: #000000;
+    }
+    p {
+      font-family: "Manrope";
+      font-weight: lighter;
+      font-size: 20px;
+      line-height: 30px;
+      color: #000000;
+    }
+    .tabs {
+      .tab {
+        .active {
+          filter: invert(72%) sepia(11%) saturate(2833%) hue-rotate(152deg) brightness(80%) contrast(86%);
+        }
+      }
+    }
+    a {
+      font-size: 10px;
+      img {
+        width: 20px;
+      }
+    }
+  }
+  .tab-content {
+    ul {
+      list-style-type: disc;
+      li {
+        font-family: "Manrope";
+        font-weight: medium;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 3%;
+        color: #474b44;
+      }
+    }
+  }
+}
+
+/*.products {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  .machines {
+    .heading {
+      color: #000;
+      font-family: Lexend;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 64px; 
+    }
+    .card-heading {
+      color: var(--dark-000000, #000);
+      font-family: Lexend;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 32px; 
+    }
+  }
+}
+
+.container {
+  .product-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .thumbnail-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .thumbnail-images img {
+    width: 30%;
+    cursor: pointer;
+  }
+}*/
