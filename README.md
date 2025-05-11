@@ -1,1 +1,1 @@
-Codes used for thr development of different pages of my project website.
+Codes used for the development of different pages of my project website.
